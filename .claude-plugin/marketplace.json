@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "search-sherpa-skills",
+  "version": "1.0.0",
+  "description": "Practical Claude skills from The Search Sherpa for local-business marketing and SEO workflows.",
+  "owner": {
+    "name": "Jeremy Bengtson",
+    "email": "github@thesearchsherpa.com"
+  },
+  "plugins": [
+    {
+      "name": "local-service-page-writer",
+      "description": "Write complete, honest, conversion-focused service pages for local service-area businesses.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jeremy Bengtson",
+        "email": "github@thesearchsherpa.com"
+      },
+      "source": {
+        "source": "github",
+        "repo": "TheSearchSherpa/local-service-page-writer"
+      },
+      "category": "marketing",
+      "tags": [
+        "seo",
+        "local-seo",
+        "service-pages",
+        "local-business"
+      ],
+      "homepage": "https://learnclaudeskills.com/",
+      "repository": "https://github.com/TheSearchSherpa/local-service-page-writer",
+      "license": "MIT"
+    }
+  ]
+}

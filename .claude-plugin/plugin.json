@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "local-service-page-writer",
+  "displayName": "Local Service Page Writer",
+  "version": "1.0.0",
+  "description": "Write complete, honest, conversion-focused website service pages for local service-area businesses. Guided onboarding plus one-service-at-a-time page generation. Website-agnostic Markdown. Never fabricates credentials, reviews, prices, or locations.",
+  "author": {
+    "name": "Jeremy Bengtson",
+    "email": "github@thesearchsherpa.com",
+    "url": "https://jeremybengtson.com/"
+  },
+  "homepage": "https://learnclaudeskills.com/",
+  "repository": "https://github.com/TheSearchSherpa/local-service-page-writer",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "local-seo",
+    "service-page",
+    "local-business",
+    "content",
+    "markdown",
+    "conversion"
+  ]
+}

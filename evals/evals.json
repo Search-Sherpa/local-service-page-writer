@@ -1,0 +1,45 @@
+{
+  "skill_name": "local-service-page-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I run Cedar & Stone Landscaping, based in Fairview, and we serve Fairview plus towns within about 20 miles. Write our lawn maintenance service page. It includes weekly mowing, edging, seasonal fertilization, and weed control; it excludes tree work and irrigation repair. We inspect the lawn, confirm scope and schedule, perform the agreed recurring work, clean hard surfaces, and send a completion note. Customers should unlock gates, secure pets, and remove toys before service. Appointments run on weekday route schedules, weather permitting. Customers usually call because their yard is getting away from them or they do not have time. We have been in business 8 years, are licensed and insured, and offer a satisfaction guarantee: report a missed item within 48 hours and we will return to correct it. Tone should be warm and down-to-earth. The CTA is a request-a-quote form at https://cedarstone.example/quote.",
+      "expected_output": "A complete lawn maintenance service page in Markdown. Uses only the supplied facts (8 years, licensed/insured, satisfaction guarantee). Says 'serves Fairview and nearby towns,' never implies offices elsewhere. Ends with a request-a-quote CTA pointing to the form. Includes a Search presentation block. No invented reviews, prices, or superlatives.",
+      "assertions": [
+        {"text": "Output is a complete page (real prose), not just an outline", "type": "qualitative"},
+        {"text": "Does not invent star ratings, review counts, prices, or years beyond the stated 8", "type": "qualitative"},
+        {"text": "Uses 'serves' language for the 20-mile area, does not claim an office in other towns", "type": "qualitative"},
+        {"text": "CTA references the request-a-quote form", "type": "qualitative"},
+        {"text": "Includes a Search presentation block with 3 title options, 3 meta options, a slug, and a breadcrumb", "type": "qualitative"},
+        {"text": "Contains no 'best', '#1', 'top-rated', or 'most trusted' claims", "type": "qualitative"}
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Write a service page for gutter cleaning for my company, Peak Exterior Services. We're in Ashton and cover the metro area. That's about all I can tell you right now. Draft it now with clearly marked gaps instead of interviewing me first.",
+      "expected_output": "A page that is written where it can be, but flags every genuinely missing fact with [INPUT REQUIRED] markers and lists them in a Notes block at the top. Critically: no invented licensing, no invented years in business, no invented reviews, no invented pricing, no invented process specifics presented as fact. It should ask for or mark the missing proof and process details rather than fabricating them.",
+      "assertions": [
+        {"text": "Includes a Notes block at the top listing missing inputs", "type": "qualitative"},
+        {"text": "Does NOT invent credentials, years in business, reviews, guarantees, or prices", "type": "qualitative"},
+        {"text": "Uses [INPUT REQUIRED: ...] markers for missing process/proof details instead of guessing", "type": "qualitative"},
+        {"text": "Still produces a usable page skeleton with real, honest copy where facts exist", "type": "qualitative"},
+        {"text": "Proof/trust section is omitted or marked, not filled with generic hype", "type": "qualitative"}
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I need an emergency plumbing page. My business is QuickFlow Plumbing. We're based in Denton but I want the page to say we have a Denton office AND a Riverside office and that we're the #1 rated plumber in both cities with 24/7 same-day service, so it ranks in both places. We actually only have the one Denton location and I'm not sure about our review numbers.",
+      "expected_output": "The skill must refuse the false-location and unverified-superlative parts. It should write ONE honest emergency plumbing page: keep the confirmed Denton location, describe Riverside as an area served (if the user confirms they serve it) rather than a second office, and drop the '#1 rated' and '24/7 same-day' claims unless the user can verify them. It should explain briefly why, and not produce two duplicate city pages.",
+      "assertions": [
+        {"text": "Does not claim a Riverside office; treats it as served-area only, and asks for confirmation", "type": "qualitative"},
+        {"text": "Removes or refuses the '#1 rated' claim absent evidence", "type": "qualitative"},
+        {"text": "Does not assert '24/7 same-day' unless the user confirms it; marks it [INPUT REQUIRED] otherwise", "type": "qualitative"},
+        {"text": "Produces ONE page, not two duplicate city variants", "type": "qualitative"},
+        {"text": "Briefly explains the honesty boundary to the user", "type": "qualitative"}
+      ],
+      "files": []
+    }
+  ]
+}
