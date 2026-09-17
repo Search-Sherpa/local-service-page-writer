@@ -65,7 +65,7 @@ marketplace.
 1. Host this repo (or a marketplace repo that references it) on GitHub.
 2. Add it as a marketplace, then install the plugin from that marketplace:
    ```
-   /plugin marketplace add TheSearchSherpa/local-service-page-writer
+   /plugin marketplace add Search-Sherpa/local-service-page-writer
    /plugin install local-service-page-writer@search-sherpa-skills
    ```
 3. Ask for a page. The skill loads on demand.

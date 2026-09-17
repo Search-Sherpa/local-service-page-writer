@@ -18,7 +18,7 @@
       },
       "source": {
         "source": "github",
-        "repo": "TheSearchSherpa/local-service-page-writer"
+        "repo": "Search-Sherpa/local-service-page-writer"
       },
       "category": "marketing",
       "tags": [
@@ -28,7 +28,7 @@
         "local-business"
       ],
       "homepage": "https://learnclaudeskills.com/",
-      "repository": "https://github.com/TheSearchSherpa/local-service-page-writer",
+      "repository": "https://github.com/Search-Sherpa/local-service-page-writer",
       "license": "MIT"
     }
   ]
