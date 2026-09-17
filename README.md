@@ -35,7 +35,7 @@ your live site. It writes the page copy; you publish it.
 ## Quick start
 
 **Download the current release:**
-[local-service-page-writer.zip](https://github.com/TheSearchSherpa/local-service-page-writer/releases/latest/download/local-service-page-writer.zip)
+[local-service-page-writer.zip](https://github.com/Search-Sherpa/local-service-page-writer/releases/latest/download/local-service-page-writer.zip)
 
 **No-code (recommended for business owners): use a Claude Project.**
 See [`project-setup/SETUP-GUIDE.md`](project-setup/SETUP-GUIDE.md) — it walks you through
@@ -44,7 +44,7 @@ page with a single sentence.
 
 **Power users: install as a plugin in Claude Code.**
 ```
-/plugin marketplace add TheSearchSherpa/local-service-page-writer
+/plugin marketplace add Search-Sherpa/local-service-page-writer
 /plugin install local-service-page-writer@search-sherpa-skills
 ```
 Then just ask for a service page. (See the setup guide for details; commands vary by Claude
@@ -159,7 +159,7 @@ appreciated but not required.
 
 Issues and pull requests are welcome, but only the maintainer can approve changes to this
 repository. Read [`CONTRIBUTING.md`](CONTRIBUTING.md), then use the repository's
-[issues](https://github.com/TheSearchSherpa/local-service-page-writer/issues) or submit a
+[issues](https://github.com/Search-Sherpa/local-service-page-writer/issues) or submit a
 pull request from a fork.
 
 ## Important review notice
